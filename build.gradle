@@ -1,0 +1,35 @@
+plugins {
+    id 'java'
+    id 'com.github.johnrengelman.shadow' version '7.0.0'
+}
+
+group 'com.github.LabyStudio'
+version '1.0.0'
+
+compileJava {
+    sourceCompatibility = '1.8'
+    targetCompatibility = '1.8'
+}
+
+repositories {
+    mavenCentral()
+}
+
+build {
+    dependsOn shadowJar
+}
+
+dependencies {
+    implementation 'com.github.LabyStudio:desktopmodules:2.5.3:all'
+    implementation 'com.github.LabyStudio:desktopmodules:2.5.3:sources'
+    //implementation project(':desktopmodules-core')
+
+    implementation group: 'com.1stleg', name: 'jnativehook', version: '2.1.0'
+    //implementation 'com.github.Vatuu:discord-rpc:1.6.2'
+}
+
+allprojects {
+    repositories {
+        maven { url 'https://jitpack.io' }
+    }
+}
