@@ -1,6 +1,8 @@
 # Phasmophobia Addon
 
-![Preview](.github/assets/preview.png)
+Phasmophobia evidence selector overlay controlled by hotkeys
+
+![Preview](.github/assets/preview.gif)
 
 ### Controls
 You can toggle the evidence state by pressing the numpad keys.<br>
