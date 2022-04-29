@@ -15,7 +15,7 @@ When you press the guess key, it will automatically select the final ghost in th
 ## Installation
 This addon requires the core application [DesktopModules](https://github.com/LabyStudio/desktopmodules)
 
-You can download the addon jar file [here](https://github.com/LabyStudio/pashmo-addon/releases/) <br>
+You can download the addon jar file [here](https://github.com/LabyStudio/phasmo-addon/releases/) <br>
 Put the built jar file into the following directory: ``C:/Users/<name>/AppData/Roaming/DesktopModules/addons/``<br>
 And then you are ready to launch the core application.
 
