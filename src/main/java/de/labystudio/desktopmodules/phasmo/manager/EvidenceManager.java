@@ -105,7 +105,7 @@ public class EvidenceManager extends NativeKeyAdapter {
                     this.robot.keyRelease(KeyEvent.VK_J);
 
                     try {
-                        Thread.sleep(20);
+                        Thread.sleep(100);
                     } catch (InterruptedException e) {
                         e.printStackTrace();
                     }
@@ -121,6 +121,11 @@ public class EvidenceManager extends NativeKeyAdapter {
 
                     // Go to evidence tab
                     this.robot.mousePress(1 << 4);
+                    try {
+                        Thread.sleep(50);
+                    } catch (InterruptedException e) {
+                        e.printStackTrace();
+                    }
                     this.robot.mouseRelease(1 << 4);
 
                     try {
@@ -134,11 +139,32 @@ public class EvidenceManager extends NativeKeyAdapter {
                     int x = index % 3;
                     int y = index / 3;
 
+                    //for(int i = 0; i < EnumGhost.values().length; i++) {
+                    //    x = i % 3;
+                    //    y = i / 3;
+//
+                    //    // Point at ghost
+                    //    this.robot.mouseMove(1080 + x * 150, 550 + y * 60);
+//
+                    //    try {
+                    //        Thread.sleep(100);
+                    //    } catch (InterruptedException e) {
+                    //        throw new RuntimeException(e);
+                    //    }
+                    //}
+
                     // Point at ghost
-                    this.robot.mouseMove(1080 + x * 150, 520 + y * 44);
+                    this.robot.mouseMove(1080 + x * 150, 550 + y * 52);
 
                     // Select ghost
                     this.robot.mousePress(1 << 4);
+
+                    try {
+                        Thread.sleep(50);
+                    } catch (InterruptedException e) {
+                        e.printStackTrace();
+                    }
+
                     this.robot.mouseRelease(1 << 4);
 
                     try {
